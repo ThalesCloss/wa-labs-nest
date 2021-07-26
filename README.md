@@ -3,6 +3,12 @@ Aplicação desenvolvida para o teste utiliza o framework Nestjs.
 
 Considerando as necessidades e poucas regras de negócio não realizei a modelagem de um domínio, utilizei entidades anémicas e as regras de negócio em uma camada de serviços. Há um acoplamento proposital entre a camada de negócio e os repositórios do Typeorm, no entanto a camada de negócios e persistência pode ser desacoplada facilmente da estrutura do framework.
 
+As regras de negócio verificadas impedem a adição ou remoção de um exame de qualquer laboratório inativo e também impedem a adição ou remoção de um exame inativo de qualquer laboratório ativo. Ao inativar um exame a associação com o laboratório é mantida.
+
+
+
+
+
 # Executando a aplicação via Docker
 A aplicação possui um arquivo de configuração docker-compose que provisiona os containers necessários para o seu funcionamento.
 
