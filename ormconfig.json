@@ -1,0 +1,10 @@
+{
+    "type": "postgres",
+    "host": "wa_postgres",
+    "port": 5432,
+    "username": "wa-lab",
+    "password": "wa-lab",
+    "database": "wa-lab",
+    "entities": ["dist/**/*.entity{.ts,.js}"],
+    "synchronize": true
+  }
