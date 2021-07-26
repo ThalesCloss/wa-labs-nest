@@ -1,0 +1,5 @@
+FROM node:lts-alpine
+RUN apk add bash
+WORKDIR /app
+EXPOSE 3000
+ENTRYPOINT [ "./docker/start.sh"]
